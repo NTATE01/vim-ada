@@ -1,0 +1,30 @@
+  1 " This completely turns off the error bells in win10
+  2 set noerrorbells visualbell t_vb=
+  3 if has('autocmd')
+  4       autocmd GUIEnter * set visualbell t_vb=
+  5   endif
+  6 " Don't mess with it
+  7
+  8 syntax on " Turns on default syntax highlighting for all files in vim
+  9 let g:asmsyntax = 'nasm' " Fixes the syntax for nasm files
+ 10 set virtualedit+=onemore "Allows cursor to move past last character at end of line
+ 11 set timeoutlen=50 " Speeds up the transistions between modes in vim
+ 12 set laststatus=2
+ 13 set encoding=utf-8
+ 14 set backspace=indent,eol,start
+ 15 set noerrorbells
+ 16 set tabstop=4 softtabstop=4
+ 17 set shiftwidth=4
+ 18 set smartindent
+ 19 set nu
+ 20 set nowrap
+ 21 set smartcase
+ 22 set noswapfile
+ 23 set nobackup
+ 24 set undodir=~/.vim/undodir
+ 25 set undofile
+ 26 set incsearch
+ 27 set colorcolumn=80
+ 28 highlight ColorColumn ctermbg=0 guibg=lightgrey
+ 29 set background=dark
+ 30 set laststatus=2
